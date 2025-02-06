@@ -158,7 +158,7 @@ def main():
             with st.form("requisition_form"):
                 item = st.text_input("Item Name")
                 quantity = st.number_input("Quantity", min_value=0.1, step=0.1)
-                unit = st.selectbox("Unit", ["kg", "tubers", "pieces", "cubes", "pack"])
+                unit = st.selectbox("Unit", ["kg", "tubers", "pieces", "cubes", "pack", "gram", "litre", "ml", "portion", "cl", "tbsp", "tsp"])
                 submit_requisition = st.form_submit_button("Add Requisition")
 
                 if submit_requisition:
